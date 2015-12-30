@@ -1,0 +1,11 @@
+{
+  "local": [
+    {
+      "id": "menu",
+      "desc": "qry menu data",
+      "url": "/data/menu.json",
+      "method": "GET",
+      "param": {}
+    }
+  ]
+}

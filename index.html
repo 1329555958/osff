@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FinLog</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="/asset/bower_components/AdminLTE/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/asset/bower_components/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/asset/bower_components/AdminLTE/dist/css/AdminLTE.min.css"/>
+    <link rel="stylesheet" href="/asset/bower_components/AdminLTE/dist/css/skins/skin-blue.min.css"/>
+    <link rel="stylesheet" href="/asset/css/main.css"/>
+    <link rel="shortcut icon" href="/asset/imgs/favicon.ico"
+          type="image/x-icon"/>
+    <script type="text/javascript">
+        //index 下使用了压缩文件
+        window.UGLIFY = !window.location.pathname.indexOf('/index');
+    </script>
+    <script type="text/javascript" src="/asset/bower_components/requirejs/require.js"></script>
+    <script type="text/javascript" src="/asset/lib/require-config.js"></script>
+    <script type="text/javascript" src="/asset/js/app.js"></script>
+
+</head>
+<body class="skin-blue sidebar-none fixed" ng-controller="rootController">
+
+<header class="main-header">
+    <a href="#/" class="logo">
+        <img src="/asset/imgs/favicon.ico" style="padding-bottom: 5px;"> FinLog
+    </a>
+    <nav class="navbar navbar-static-top" role="navigation">
+        <!-- 菜单 -->
+        <ul class="nav navbar-nav">
+            <li class="dropdown messages-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">日志管理<span
+                        class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <ul class="menu">
+                            <li>
+                                <a href="#/dashboard">仪表盘</a>
+                            </li>
+                            <li>
+                                <a href="#/logqry">日志查询</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown messages-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">警告设置<span
+                        class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <ul class="menu">
+                            <li>
+                                <a href="#/warnrule">警告规则设置</a>
+                            </li>
+                            <li>
+                                <a href="#/warnerrdetail">警告错误详情</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+
+</header>
+
+<div class="content-wrapper">
+    <div class="content body">
+        <div ui-view></div>
+    </div>
+</div>
+</body>
+</html>
