@@ -1,0 +1,33 @@
+{
+  "name": "osff",
+  "description": "one-stop-frontend-framework",
+  "main": "index.js",
+  "authors": [
+    "wch"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "frontend",
+    "framework",
+    "angularjs"
+  ],
+  "homepage": "https://github.com/1329555958/osff",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "AdminLTE": "adminlte#~2.3.2",
+    "angular": "~1.4.8",
+    "angular-ui-router": "~0.2.15",
+    "font-awesome": "~4.5.0",
+    "requirejs": "~2.1.22",
+    "lodash": "~3.10.1"
+  }
+}
