@@ -84,9 +84,12 @@ require(['app'], function (app) {
 
     });
 
-    app.controller('menuController', function ($rest) {
+    app.controller('menuController', function ($rest, $scope) {
+        $scope.menuData = [];
         $rest.get('menu', null, function (data) {
             console.log('menu data', data);
+            $scope.menuData = data;
+            //$scope.$apply();
         });
     });
 

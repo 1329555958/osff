@@ -30,33 +30,14 @@
     <nav class="navbar navbar-static-top" role="navigation" ng-controller="menuController">
         <!-- 菜单 -->
         <ul class="nav navbar-nav">
-            <li class="dropdown messages-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">日志管理<span
+            <li class="dropdown messages-menu" ng-repeat="menu in menuData">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{menu.name}}<span
                         class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <li>
                         <ul class="menu">
-                            <li>
-                                <a href="#/dashboard">仪表盘</a>
-                            </li>
-                            <li>
-                                <a href="#/logqry">日志查询</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li class="dropdown messages-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">警告设置<span
-                        class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li>
-                        <ul class="menu">
-                            <li>
-                                <a href="#/warnrule">警告规则设置</a>
-                            </li>
-                            <li>
-                                <a href="#/warnerrdetail">警告错误详情</a>
+                            <li ng-repeat="item in menu.children">
+                                <a ng-href="{{item.url}}">{{item.name}}</a>
                             </li>
                         </ul>
                     </li>
