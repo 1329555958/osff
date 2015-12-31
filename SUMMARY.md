@@ -1,4 +1,4 @@
 # Summary
 
-* Highcharts Demo
+* [Highcharts Demo](highcharts_demo.md)
 
