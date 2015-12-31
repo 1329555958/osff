@@ -4,7 +4,7 @@
 define('app', ['config', 'base'], function (config) {
 
     var app = angular.module('app', ['ngExtend', 'ui.router']);
-
+    angular.CFG = config; //保存配置数据
     app.constant('VIEWS_BASE_PATH', config.views_base_path);
 
     app.config(function ($stateProvider, VIEWS_BASE_PATH, $controllerProvider, $filterProvider, $requireProvider, $urlRouterProvider, $provide) {
@@ -83,6 +83,13 @@ require(['app'], function (app) {
     app.controller('rootController', function ($rootScope, $timeout) {
 
     });
+
+    app.controller('menuController', function ($rest) {
+        $rest.get('menu', null, function (data) {
+            console.log('menu data', data);
+        });
+    });
+
     angular.element(document).ready(function () {
         //阻止 # 导航
         $(document).delegate('a', 'click', function (event) {
@@ -95,4 +102,5 @@ require(['app'], function (app) {
         angular.bootstrap(document, ['app']);
     });
 });
+
 

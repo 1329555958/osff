@@ -1,21 +1,25 @@
-[
-  {
-    "id": 1,
-    "name": "后台管理",
-    "url": null,
-    "children": [
-      {
-        "id": 11,
-        "name": "菜单配置",
-        "url": "#/menu",
-        "children": null
-      },
-      {
-        "id": 11,
-        "name": "接口配置",
-        "url": "#/interface",
-        "children": null
-      }
-    ]
-  }
-]
+{
+  "code": 0,
+  "msg": "success",
+  "data": [
+    {
+      "id": 1,
+      "name": "后台管理",
+      "url": null,
+      "children": [
+        {
+          "id": 11,
+          "name": "菜单配置",
+          "url": "#/menu",
+          "children": null
+        },
+        {
+          "id": 11,
+          "name": "接口配置",
+          "url": "#/interface",
+          "children": null
+        }
+      ]
+    }
+  ]
+}
