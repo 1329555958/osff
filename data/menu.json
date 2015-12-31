@@ -10,7 +10,7 @@
         {
           "id": 11,
           "name": "菜单配置",
-          "url": "#/menu",
+          "url": "#/menumgt",
           "children": null
         },
         {
